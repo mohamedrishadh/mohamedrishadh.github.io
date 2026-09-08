@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,125 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mohamed Rishadh | Portfolio</title>
+    <title>Rishadh | Junior Executive</title>
 
-    <meta name="description"
-        content="Personal portfolio website of Mohamed Rishadh, Transport and Logistics Professional.">
-
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
-
+    <!-- ================= NAVBAR ================= -->
     <header class="navbar">
+        <div class="nav-container">
 
-        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <span>R</span> RISHADH
+            </a>
 
-            <div class="logo">MR.</div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
             <nav>
-
-                <button class="menu-btn" onclick="toggleMenu()">
-                    ☰
-                </button>
-
-                <ul class="nav-links">
-
-                    <!-- SEPARATE PAGES -->
+                <ul id="navMenu">
 
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html" class="active">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
                     </li>
 
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="about.html">
+                            <i class="fa-solid fa-user"></i>
+                            About
+                        </a>
                     </li>
 
                     <li>
-                        <a href="skills.html">Skills</a>
+                        <a href="skills.html">
+                            <i class="fa-solid fa-code"></i>
+                            Skills
+                        </a>
                     </li>
 
                     <li>
-                        <a href="experience.html">Experience</a>
+                        <a href="experience.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
                     </li>
 
                     <li>
-                        <a href="education.html">Education</a>
+                        <a href="education.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Education
+                        </a>
                     </li>
 
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
                     </li>
 
                 </ul>
-
             </nav>
 
         </div>
-
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- ================= HERO ================= -->
+    <main>
 
-    <section class="hero" id="home">
-
-        <div class="container hero-layout">
+        <section class="hero">
 
             <div class="hero-content">
 
-                <div class="status-badge">
-
-                    <span class="status-dot"></span>
-
-                    FOCUSED ON GROWTH
-
-                </div>
-
-                <p class="gold welcome-text">
-                    WELCOME TO MY PORTFOLIO
+                <p class="hero-small">
+                    <i class="fa-solid fa-circle"></i>
+                    Welcome to my portfolio
                 </p>
 
                 <h1>
-
-                    MOHAMED
-                    <br>
-
-                    <span class="gold">
-                        RISHADH
-                    </span>
-
+                    Hi, I'm <span>Rishadh</span>
                 </h1>
 
                 <h2>
-                    Transport & Logistics Professional
+                    Junior Executive
                 </h2>
 
-                <p class="hero-tagline">
-                    Learn. Create. Grow.
+                <p class="hero-description">
+                    Panda Group of Companies
                 </p>
 
-                <p class="hero-description">
-
-                    Transport & Logistics Professional
-                    with a passion for learning, growth
-                    and building my own business.
-
+                <p class="hero-text">
+                    A passionate and responsible professional with experience
+                    in transport coordination, customer handling, Excel data
+                    management and daily operational support.
                 </p>
 
                 <div class="hero-buttons">
 
-                    <a href="experience.html" class="btn">
+                    <a href="experience.html" class="btn primary-btn">
+                        <i class="fa-solid fa-briefcase"></i>
                         View My Experience
                     </a>
 
-                    <a href="contact.html" class="btn btn-outline">
+                    <a href="contact.html" class="btn secondary-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
                         Contact Me
                     </a>
 
@@ -133,545 +128,309 @@
             </div>
 
 
-            <!-- PROFILE -->
+            <!-- ================= PROFILE ================= -->
+            <div class="hero-profile">
 
-            <div class="hero-photo">
+                <div class="profile-ring">
 
-                <div class="photo-glow"></div>
+                    <img src="profile.jpg.png"
+                         alt="Rishadh Profile Photo">
 
-                <div class="photo-ring"></div>
-
-                <img src="profile.jpg.png"
-                    alt="Mohamed Rishadh"
-                    class="profile-photo">
-
-                <div class="photo-badge">
-                    TRANSPORT & LOGISTICS
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- =========================
-         ABOUT PREVIEW
-    ========================== -->
+        <!-- ================= ABOUT PREVIEW ================= -->
+        <section class="section about-section">
 
-    <section id="about">
+            <div class="section-title">
+                <span>01</span>
+                <h2>About Me</h2>
+            </div>
 
-        <div class="container">
+            <div class="about-content">
 
-            <h2 class="section-title">
-                About Me
-            </h2>
+                <div class="about-text">
 
-            <p class="about-text">
+                    <p>
+                        I am Rishadh, currently working as a Junior Executive
+                        at Panda Group of Companies.
+                    </p>
 
-                I am Mohamed Rishadh, a Transport and Logistics
-                Professional. I enjoy learning new things,
-                taking on new challenges and developing my
-                professional skills.
+                    <p>
+                        I have practical experience in transport and logistics
+                        operations, vehicle coordination, driver communication,
+                        customer handling and Excel-based data management.
+                    </p>
 
-                <br><br>
+                    <p>
+                        I always focus on responsibility, communication,
+                        teamwork and completing tasks efficiently.
+                    </p>
 
-                My long-term ambition is to build my own
-                successful business and continue growing
-                professionally.
+                    <a href="about.html" class="text-link">
+                        Read More About Me
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
-            </p>
+                </div>
 
-            <br>
+            </div>
 
-            <a href="about.html" class="btn">
-                Read More About Me →
-            </a>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- =========================
-         SKILLS PREVIEW
-    ========================== -->
+        <!-- ================= SKILLS PREVIEW ================= -->
+        <section class="section skills-section">
 
-    <section id="skills">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                My Skills
-            </h2>
+            <div class="section-title">
+                <span>02</span>
+                <h2>My Skills</h2>
+            </div>
 
             <div class="skills-grid">
 
                 <div class="skill-card">
-                    <span class="skill-icon">📊</span>
-                    <span>Excel</span>
+                    <i class="fa-solid fa-file-excel"></i>
+                    <h3>Microsoft Excel</h3>
+                    <p>
+                        Data entry, updating and professional data management.
+                    </p>
                 </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">🤝</span>
-                    <span>Teamwork</span>
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Teamwork</h3>
+                    <p>
+                        Working effectively with teams and colleagues.
+                    </p>
                 </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">⏱️</span>
-                    <span>Time Management</span>
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Time Management</h3>
+                    <p>
+                        Managing daily responsibilities and schedules.
+                    </p>
                 </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">🚚</span>
-                    <span>Transport Coordination</span>
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>Transport Coordination</h3>
+                    <p>
+                        Vehicle arrangements and transport operations.
+                    </p>
                 </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">👥</span>
-                    <span>Customer Handling</span>
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Customer Handling</h3>
+                    <p>
+                        Professional communication and customer support.
+                    </p>
                 </div>
 
                 <div class="skill-card">
-                    <span class="skill-icon">👑</span>
-                    <span>Leadership</span>
-                </div>
-
-                <div class="skill-card">
-                    <span class="skill-icon">💡</span>
-                    <span>Problem Solving</span>
+                    <i class="fa-solid fa-user-tie"></i>
+                    <h3>Leadership</h3>
+                    <p>
+                        Taking responsibility and supporting team operations.
+                    </p>
                 </div>
 
             </div>
 
-            <br>
+            <div class="center-button">
 
-            <a href="skills.html" class="btn">
-                View All Skills →
-            </a>
+                <a href="skills.html" class="btn primary-btn">
+                    <i class="fa-solid fa-list"></i>
+                    View All Skills
+                </a>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
 
 
-    <!-- =========================
-         EXPERIENCE PREVIEW
-    ========================== -->
+        <!-- ================= EXPERIENCE PREVIEW ================= -->
+        <section class="section experience-section">
 
-    <section id="experience">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Experience
-            </h2>
+            <div class="section-title">
+                <span>03</span>
+                <h2>Experience</h2>
+            </div>
 
             <div class="experience-card">
 
-                <span class="timeline-dot"></span>
+                <div class="experience-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
 
-                <h3>
-                    Panda Group of Companies
-                </h3>
+                <div class="experience-content">
 
-                <p>
-                    <strong>
-                        Transport & Logistics Professional
-                        | 2025 – Present
-                    </strong>
-                </p>
+                    <h3>
+                        Junior Executive
+                    </h3>
 
-                <div class="experience-list">
+                    <h4>
+                        Panda Group of Companies
+                    </h4>
 
-                    <p>✓ Vehicle Arrangement & Coordination</p>
-
-                    <p>✓ Driver Coordination</p>
-
-                    <p>✓ Customer Details Management</p>
-
-                    <p>✓ Excel Data Updating & Management</p>
-
-                    <p>✓ Transport Schedule Management</p>
-
-                    <p>✓ Daily Report Preparation</p>
+                    <span class="experience-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        2025 – Present
+                    </span>
 
                     <p>
-                        ✓ Monthly Pass Preparation —
-                        Katunayake ACV Pass &
-                        Biyagama BOI Pass
+                        Handling transport coordination, vehicle arrangements,
+                        driver communication, customer details, Excel data,
+                        transport schedules and daily operational reports.
                     </p>
 
                 </div>
 
             </div>
 
-            <br>
+            <div class="center-button">
 
-            <a href="experience.html" class="btn">
-                View Full Experience →
-            </a>
+                <a href="experience.html" class="btn secondary-btn">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    View Full Experience
+                </a>
 
-        </div>
+            </div>
 
-    </section>
+        </section>
 
 
-    <!-- =========================
-         EDUCATION PREVIEW
-    ========================== -->
+        <!-- ================= EDUCATION PREVIEW ================= -->
+        <section class="section education-section">
 
-    <section id="education">
+            <div class="section-title">
+                <span>04</span>
+                <h2>Education</h2>
+            </div>
 
-        <div class="container">
-
-            <h2 class="section-title">
-                Education
-            </h2>
-
-            <div class="experience-card education-card">
+            <div class="education-card">
 
                 <div class="education-icon">
-                    🎓
+                    <i class="fa-solid fa-graduation-cap"></i>
                 </div>
 
-                <h3>
-                    Al Mahmood Maha Vidyalaya
-                </h3>
+                <div class="education-content">
+
+                    <h3>
+                        G.C.E. Ordinary Level (O/L)
+                    </h3>
+
+                    <h4>
+                        Al Mahmood Maha Vidyalaya
+                    </h4>
+
+                    <span>
+                        <i class="fa-regular fa-calendar"></i>
+                        Completed 2021
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="center-button">
+
+                <a href="education.html" class="btn primary-btn">
+                    <i class="fa-solid fa-book-open"></i>
+                    View Education
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT PREVIEW ================= -->
+        <section class="section contact-section">
+
+            <div class="section-title">
+                <span>05</span>
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="contact-preview">
 
                 <p>
-                    G.C.E. Ordinary Level (O/L)
+                    Interested in working together or want to get in touch?
+                    Feel free to contact me.
                 </p>
 
-                <p class="year">
-                    2021
-                </p>
+                <div class="contact-buttons">
 
-            </div>
+                    <a href="contact.html" class="btn primary-btn">
+                        <i class="fa-solid fa-envelope"></i>
+                        Open Contact Page
+                    </a>
 
-            <br>
-
-            <a href="education.html" class="btn">
-                View Education →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT PREVIEW
-    ========================== -->
-
-    <section id="contact">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Contact Me
-            </h2>
-
-            <p class="contact-intro">
-
-                Have a project, opportunity or business idea?
-                Feel free to get in touch with me.
-
-            </p>
-
-
-            <div class="contact-grid">
-
-                <a href="tel:+94704838532"
-                    class="contact-card">
-
-                    <span class="contact-icon">
-                        📱
-                    </span>
-
-                    <span>
-
-                        <small>Phone</small>
-
-                        <strong>
-                            070 483 8532
-                        </strong>
-
-                    </span>
-
-                </a>
-
-
-                <a href="mailto:mohamedrish18@icloud.com"
-                    class="contact-card">
-
-                    <span class="contact-icon">
-                        📧
-                    </span>
-
-                    <span>
-
-                        <small>Email</small>
-
-                        <strong>
-                            mohamedrish18@icloud.com
-                        </strong>
-
-                    </span>
-
-                </a>
-
-
-                <a href="https://wa.me/94704838532"
-                    target="_blank"
-                    class="contact-card">
-
-                    <span class="contact-icon">
-                        💬
-                    </span>
-
-                    <span>
-
-                        <small>WhatsApp</small>
-
-                        <strong>
-                            Chat With Me
-                        </strong>
-
-                    </span>
-
-                </a>
-
-
-                <a href="https://www.instagram.com/m_rish_4you"
-                    target="_blank"
-                    class="contact-card">
-
-                    <span class="contact-icon">
-                        📸
-                    </span>
-
-                    <span>
-
-                        <small>Instagram</small>
-
-                        <strong>
-                            @m_rish_4you
-                        </strong>
-
-                    </span>
-
-                </a>
-
-
-                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
-                    target="_blank"
-                    class="contact-card">
-
-                    <span class="contact-icon">
-                        📘
-                    </span>
-
-                    <span>
-
-                        <small>Facebook</small>
-
-                        <strong>
-                            My Facebook Profile
-                        </strong>
-
-                    </span>
-
-                </a>
-
-
-                <div class="contact-card">
-
-                    <span class="contact-icon">
-                        📍
-                    </span>
-
-                    <span>
-
-                        <small>Location</small>
-
-                        <strong>
-                            Biyagama, Malwana
-                        </strong>
-
-                    </span>
+                    <a href="https://wa.me/94704838532"
+                       target="_blank"
+                       class="btn whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp Me
+                    </a>
 
                 </div>
 
             </div>
 
-            <br>
+        </section>
 
-            <a href="contact.html" class="btn">
-                Open Contact Page →
-            </a>
-
-        </div>
-
-    </section>
+    </main>
 
 
-    <!-- =========================
-         SUGGEST A CHANGE
-    ========================== -->
-
-    <button id="feedbackBtn"
-        onclick="openFeedback()">
-
-        💡
-        <span>Suggest a Change</span>
-
-    </button>
-
-
-    <div id="feedbackBox"
-        class="feedback-box">
-
-        <div class="feedback-content">
-
-            <button class="feedback-close"
-                onclick="closeFeedback()">
-
-                ×
-
-            </button>
-
-            <div class="feedback-icon">
-                💡
-            </div>
-
-            <h2>
-                Suggest a Change
-            </h2>
-
-            <p>
-
-                Did you notice something that
-                could be improved?
-
-                <br>
-
-                Send me your suggestion.
-
-            </p>
-
-
-            <form
-                action="https://formsubmit.co/mohamedrish18@icloud.com"
-                method="POST">
-
-                <input type="hidden"
-                    name="_subject"
-                    value="New Portfolio Website Suggestion">
-
-                <input type="hidden"
-                    name="_captcha"
-                    value="false">
-
-                <input type="hidden"
-                    name="_template"
-                    value="table">
-
-
-                <input type="text"
-                    name="Name"
-                    placeholder="Your Name"
-                    required>
-
-
-                <input type="email"
-                    name="Email"
-                    placeholder="Your Email"
-                    required>
-
-
-                <textarea
-                    name="Suggestion"
-                    placeholder="What should I change?"
-                    rows="5"
-                    required></textarea>
-
-
-                <button type="submit"
-                    class="feedback-send">
-
-                    Send Suggestion 🚀
-
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
 
         <div class="footer-content">
 
             <h3>
-
-                MOHAMED
-                <span>RISHADH</span>
-
+                <span>R</span> RISHADH
             </h3>
 
             <p>
-                Transport & Logistics Professional
+                Junior Executive | Panda Group of Companies
             </p>
-
 
             <div class="social-links">
 
-                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
-                    target="_blank">
-
-                    Facebook
-
-                </a>
-
-
                 <a href="https://www.instagram.com/m_rish_4you"
-                    target="_blank">
-
-                    Instagram
-
+                   target="_blank"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
                 </a>
 
+                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+                   target="_blank"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
 
-                <a href="mailto:mohamedrish18@icloud.com">
+                <a href="https://wa.me/94704838532"
+                   target="_blank"
+                   aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
 
-                    Email
-
+                <a href="mailto:mohamedrish18@icloud.com"
+                   aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
                 </a>
 
             </div>
 
-
-            <div class="footer-line"></div>
-
-
             <p class="copyright">
-
-                © 2026 Mohamed Rishadh.
-                All Rights Reserved.
-
-            </p>
-
-
-            <p class="tagline">
-                Learn. Create. Grow.
+                © 2026 Rishadh. All Rights Reserved.
             </p>
 
         </div>
@@ -679,128 +438,51 @@
     </footer>
 
 
-    <!-- =========================
-         WHATSAPP
-    ========================== -->
-
-    <a href="https://wa.me/94704838532"
-        class="whatsapp-btn"
-        target="_blank"
-        aria-label="Chat on WhatsApp">
-
-        ☎
-
-    </a>
-
-
-    <!-- =========================
-         SCROLL TOP
-    ========================== -->
-
-    <button id="topBtn"
-        onclick="scrollToTop()"
-        aria-label="Back to top">
-
-        ↑
-
-    </button>
-
-
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
-
+    <!-- ================= MOBILE MENU ================= -->
     <script>
 
-        function toggleMenu() {
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
 
-            document
-                .querySelector(".nav-links")
-                .classList.toggle("active");
+        menuToggle.addEventListener("click", function () {
 
-        }
+            navMenu.classList.toggle("active");
 
+            const icon = menuToggle.querySelector("i");
 
-        function openFeedback() {
+            if (navMenu.classList.contains("active")) {
 
-            document
-                .getElementById("feedbackBox")
-                .classList.add("show");
-
-            document.body.classList.add("modal-open");
-
-        }
-
-
-        function closeFeedback() {
-
-            document
-                .getElementById("feedbackBox")
-                .classList.remove("show");
-
-            document.body.classList.remove("modal-open");
-
-        }
-
-
-        document
-            .getElementById("feedbackBox")
-            .addEventListener("click", function (event) {
-
-                if (event.target === this) {
-
-                    closeFeedback();
-
-                }
-
-            });
-
-
-        document.addEventListener("keydown", function (event) {
-
-            if (event.key === "Escape") {
-
-                closeFeedback();
-
-            }
-
-        });
-
-
-        const topBtn =
-            document.getElementById("topBtn");
-
-
-        window.addEventListener("scroll", function () {
-
-            if (window.scrollY > 400) {
-
-                topBtn.classList.add("show");
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
 
             } else {
 
-                topBtn.classList.remove("show");
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
 
             }
 
         });
 
 
-        function scrollToTop() {
+        // Close mobile menu after clicking a link
+        document.querySelectorAll("#navMenu a").forEach(function(link) {
 
-            window.scrollTo({
+            link.addEventListener("click", function() {
 
-                top: 0,
+                navMenu.classList.remove("active");
 
-                behavior: "smooth"
+                const icon = menuToggle.querySelector("i");
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
 
             });
 
-        }
+        });
 
     </script>
 
 </body>
 
 </html>
-```
