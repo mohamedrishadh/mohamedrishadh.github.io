@@ -1,336 +1,536 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Mohamed Rishadh - Professional Skills">
-
-    <title>Skills | Mohamed Rishadh</title>
+    <title>Skills | Rishadh</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
 
-<header class="navbar">
+        <div class="nav-container">
 
-    <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <span>R</span> RISHADH
+            </a>
 
-        <div class="logo">
-            MR.
-        </div>
-
-        <nav>
-
-            <button class="menu-btn" onclick="toggleMenu()">
-                ☰
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
             </button>
 
-            <ul class="nav-links" id="navLinks">
+            <nav>
+                <ul id="navMenu">
 
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-user"></i>
+                            About
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="skills.html" class="active">
-                        Skills
-                    </a>
-                </li>
+                    <li>
+                        <a href="skills.html" class="active">
+                            <i class="fa-solid fa-code"></i>
+                            Skills
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="experience.html">
-                        Experience
-                    </a>
-                </li>
+                    <li>
+                        <a href="experience.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="education.html">
-                        Education
-                    </a>
-                </li>
+                    <li>
+                        <a href="education.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Education
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                </li>
+                    <li>
+                        <a href="contact.html">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
+                    </li>
 
-            </ul>
+                </ul>
+            </nav>
 
-        </nav>
+        </div>
 
-    </div>
-
-</header>
+    </header>
 
 
-<!-- =====================================================
-     SKILLS PAGE
-===================================================== -->
+    <!-- ================= SKILLS PAGE ================= -->
+    <main class="inner-page">
 
-<main class="inner-page">
+        <!-- Page Heading -->
+        <section class="page-heading">
 
-    <div class="container">
+            <div class="section-title">
 
-        <!-- PAGE HEADING -->
+                <span>02</span>
 
-        <div class="page-heading">
+                <h1>My Skills</h1>
 
-            <span>
-                WHAT I CAN DO
-            </span>
-
-            <h1>
-                MY <strong>SKILLS</strong>
-            </h1>
+            </div>
 
             <p>
-                Professional skills developed through experience,
-                learning and daily work.
+                Professional skills and practical abilities
+                developed through my work experience.
+            </p>
+
+        </section>
+
+
+        <!-- ================= SKILLS GRID ================= -->
+        <section class="section skills-section">
+
+            <div class="skills-grid">
+
+
+                <!-- Microsoft Excel -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+
+                    <h3>
+                        Microsoft Excel
+                    </h3>
+
+                    <p>
+                        Data entry, updating records, maintaining
+                        information and preparing Excel-based reports.
+                    </p>
+
+                </div>
+
+
+                <!-- Teamwork -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <h3>
+                        Teamwork
+                    </h3>
+
+                    <p>
+                        Working effectively with colleagues and
+                        supporting team operations to achieve goals.
+                    </p>
+
+                </div>
+
+
+                <!-- Time Management -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <h3>
+                        Time Management
+                    </h3>
+
+                    <p>
+                        Organizing daily responsibilities and
+                        completing tasks according to schedules.
+                    </p>
+
+                </div>
+
+
+                <!-- Transport Coordination -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-truck"></i>
+                    </div>
+
+                    <h3>
+                        Transport Coordination
+                    </h3>
+
+                    <p>
+                        Coordinating vehicles, transport schedules
+                        and daily logistics requirements.
+                    </p>
+
+                </div>
+
+
+                <!-- Customer Handling -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <h3>
+                        Customer Handling
+                    </h3>
+
+                    <p>
+                        Maintaining professional communication
+                        and handling customer requirements.
+                    </p>
+
+                </div>
+
+
+                <!-- Leadership -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+
+                    <h3>
+                        Leadership
+                    </h3>
+
+                    <p>
+                        Taking responsibility, supporting colleagues
+                        and helping coordinate daily activities.
+                    </p>
+
+                </div>
+
+
+                <!-- Problem Solving -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Identifying operational issues and finding
+                        practical solutions efficiently.
+                    </p>
+
+                </div>
+
+
+                <!-- Communication -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+
+                    <h3>
+                        Communication
+                    </h3>
+
+                    <p>
+                        Clear and professional communication with
+                        drivers, customers and team members.
+                    </p>
+
+                </div>
+
+
+                <!-- Transport Operations -->
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-road"></i>
+                    </div>
+
+                    <h3>
+                        Transport Operations
+                    </h3>
+
+                    <p>
+                        Supporting daily transport operations,
+                        schedules and operational reporting.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROFESSIONAL APPROACH ================= -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>03</span>
+
+                <h2>My Professional Approach</h2>
+
+            </div>
+
+
+            <div class="values-grid">
+
+
+                <div class="value-card">
+
+                    <i class="fa-solid fa-bullseye"></i>
+
+                    <h3>
+                        Goal Focused
+                    </h3>
+
+                    <p>
+                        I focus on completing responsibilities properly
+                        and achieving the required results.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    <h3>
+                        Efficient
+                    </h3>
+
+                    <p>
+                        I aim to manage tasks efficiently while
+                        maintaining accuracy and quality.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <i class="fa-solid fa-arrows-rotate"></i>
+
+                    <h3>
+                        Adaptable
+                    </h3>
+
+                    <p>
+                        I am willing to learn new methods and adapt
+                        to changing work requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="value-card">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <h3>
+                        Reliable
+                    </h3>
+
+                    <p>
+                        I take my responsibilities seriously and
+                        work to complete tasks on time.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+        <section class="section about-cta">
+
+            <div class="cta-content">
+
+                <i class="fa-solid fa-rocket"></i>
+
+                <h2>
+                    Want to Know More?
+                </h2>
+
+                <p>
+                    Explore my professional experience or
+                    get in touch with me.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="experience.html"
+                       class="btn primary-btn">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        View Experience
+
+                    </a>
+
+
+                    <a href="contact.html"
+                       class="btn secondary-btn">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h3>
+                <span>R</span> RISHADH
+            </h3>
+
+            <p>
+                Junior Executive | Panda Group of Companies
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/m_rish_4you"
+                   target="_blank"
+                   aria-label="Instagram">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+
+                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+                   target="_blank"
+                   aria-label="Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <a href="https://wa.me/94704838532"
+                   target="_blank"
+                   aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+
+                <a href="mailto:mohamedrish18@icloud.com"
+                   aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 Rishadh. All Rights Reserved.
             </p>
 
         </div>
 
+    </footer>
 
-        <!-- SKILLS GRID -->
 
-        <div class="skills-grid">
+    <!-- ================= MOBILE MENU ================= -->
+    <script>
 
-            <!-- Skill 01 -->
+        const menuToggle = document.getElementById("menuToggle");
 
-            <div class="skill-card">
+        const navMenu = document.getElementById("navMenu");
 
-                <h3>
-                    Excel
-                </h3>
 
-                <p>
-                    Data updating, management, reports and
-                    professional Excel-based work.
-                </p>
+        menuToggle.addEventListener("click", function () {
 
-            </div>
+            navMenu.classList.toggle("active");
 
+            const icon = menuToggle.querySelector("i");
 
-            <!-- Skill 02 -->
 
-            <div class="skill-card">
+            if (navMenu.classList.contains("active")) {
 
-                <h3>
-                    Teamwork
-                </h3>
+                icon.classList.remove("fa-bars");
 
-                <p>
-                    Working effectively with team members
-                    to achieve daily operational goals.
-                </p>
+                icon.classList.add("fa-xmark");
 
-            </div>
+            } else {
 
+                icon.classList.remove("fa-xmark");
 
-            <!-- Skill 03 -->
+                icon.classList.add("fa-bars");
 
-            <div class="skill-card">
+            }
 
-                <h3>
-                    Time Management
-                </h3>
+        });
 
-                <p>
-                    Managing schedules, priorities and
-                    daily responsibilities efficiently.
-                </p>
 
-            </div>
+        // Close menu after clicking a link
 
+        document.querySelectorAll("#navMenu a").forEach(function(link) {
 
-            <!-- Skill 04 -->
+            link.addEventListener("click", function() {
 
-            <div class="skill-card">
+                navMenu.classList.remove("active");
 
-                <h3>
-                    Transport Coordination
-                </h3>
+                const icon = menuToggle.querySelector("i");
 
-                <p>
-                    Coordinating vehicles, drivers and
-                    transportation requirements.
-                </p>
+                icon.classList.remove("fa-xmark");
 
-            </div>
+                icon.classList.add("fa-bars");
 
+            });
 
-            <!-- Skill 05 -->
+        });
 
-            <div class="skill-card">
-
-                <h3>
-                    Customer Handling
-                </h3>
-
-                <p>
-                    Maintaining professional communication
-                    and handling customer requirements.
-                </p>
-
-            </div>
-
-
-            <!-- Skill 06 -->
-
-            <div class="skill-card">
-
-                <h3>
-                    Leadership
-                </h3>
-
-                <p>
-                    Taking responsibility, coordinating tasks
-                    and supporting team performance.
-                </p>
-
-            </div>
-
-
-            <!-- Skill 07 -->
-
-            <div class="skill-card">
-
-                <h3>
-                    Problem Solving
-                </h3>
-
-                <p>
-                    Identifying operational issues and finding
-                    practical solutions.
-                </p>
-
-            </div>
-
-
-            <!-- Skill 08 -->
-
-            <div class="skill-card">
-
-                <h3>
-                    Communication
-                </h3>
-
-                <p>
-                    Clear and professional communication with
-                    drivers, customers and team members.
-                </p>
-
-            </div>
-
-
-            <!-- Skill 09 -->
-
-            <div class="skill-card">
-
-                <h3>
-                    Transport Operations
-                </h3>
-
-                <p>
-                    Supporting daily transport operations,
-                    schedules and coordination activities.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- BUTTONS -->
-
-        <div class="hero-buttons">
-
-            <a href="index.html" class="btn">
-                ← Back to Home
-            </a>
-
-            <a href="experience.html" class="btn btn-primary">
-                View My Experience →
-            </a>
-
-        </div>
-
-    </div>
-
-</main>
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer>
-
-    <div class="container">
-
-        <p>
-            © 2026 Mohamed Rishadh. All Rights Reserved.
-        </p>
-
-        <div class="footer-social">
-
-            <a href="https://wa.me/94704838532"
-               target="_blank">
-                WhatsApp
-            </a>
-
-            <a href="https://www.instagram.com/m_rish_4you"
-               target="_blank">
-                Instagram
-            </a>
-
-            <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
-               target="_blank">
-                Facebook
-            </a>
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-function toggleMenu() {
-
-    const navLinks =
-        document.getElementById("navLinks");
-
-    navLinks.classList.toggle("show");
-
-}
-
-</script>
+    </script>
 
 </body>
+
 </html>
-```
