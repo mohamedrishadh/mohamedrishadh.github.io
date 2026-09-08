@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact Mohamed Rishadh">
+
+    <title>Contact | Mohamed Rishadh</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-content">
+
+        <div class="logo">
+            MR.
+        </div>
+
+        <nav>
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="skills.html">
+                        Skills
+                    </a>
+                </li>
+
+                <li>
+                    <a href="experience.html">
+                        Experience
+                    </a>
+                </li>
+
+                <li>
+                    <a href="education.html">
+                        Education
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="active">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTACT PAGE
+===================================================== -->
+
+<main class="inner-page">
+
+    <div class="container">
+
+        <!-- PAGE HEADING -->
+
+        <div class="page-heading">
+
+            <span>
+                LET'S CONNECT
+            </span>
+
+            <h1>
+                CONTACT <strong>ME</strong>
+            </h1>
+
+            <p>
+                Feel free to get in touch with me.
+            </p>
+
+        </div>
+
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="contact-grid">
+
+            <!-- Phone -->
+
+            <div class="contact-card">
+
+                <h3>
+                    Phone
+                </h3>
+
+                <p>
+                    <a href="tel:+94704838532">
+                        070 483 8532
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- Email -->
+
+            <div class="contact-card">
+
+                <h3>
+                    Email
+                </h3>
+
+                <p>
+                    <a href="mailto:mohamedrish18@icloud.com">
+                        mohamedrish18@icloud.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- WhatsApp -->
+
+            <div class="contact-card">
+
+                <h3>
+                    WhatsApp
+                </h3>
+
+                <p>
+                    <a href="https://wa.me/94704838532"
+                       target="_blank">
+                        Chat on WhatsApp
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- Location -->
+
+            <div class="contact-card">
+
+                <h3>
+                    Location
+                </h3>
+
+                <p>
+                    Biyagama, Malwana
+                </p>
+
+            </div>
+
+
+            <!-- Instagram -->
+
+            <div class="contact-card">
+
+                <h3>
+                    Instagram
+                </h3>
+
+                <p>
+                    <a href="https://www.instagram.com/m_rish_4you"
+                       target="_blank">
+                        @m_rish_4you
+                    </a>
+                </p>
+
+            </div>
+
+
+            <!-- Facebook -->
+
+            <div class="contact-card">
+
+                <h3>
+                    Facebook
+                </h3>
+
+                <p>
+                    <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+                       target="_blank">
+                        Visit My Facebook
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FEEDBACK -->
+
+        <div class="about-text" style="margin-top: 45px;">
+
+            <h3 style="color:#d4af37; margin-bottom:15px;">
+                Have a Suggestion?
+            </h3>
+
+            <p>
+                I am always looking to improve my portfolio,
+                professional skills and personal brand.
+                Your feedback and suggestions are welcome.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="btn btn-primary"
+                    onclick="openFeedback()">
+                    Send a Suggestion
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BACK BUTTON -->
+
+        <div class="hero-buttons">
+
+            <a href="education.html" class="btn">
+                ← My Education
+            </a>
+
+            <a href="index.html" class="btn btn-primary">
+                Back to Home
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- =====================================================
+     FEEDBACK MODAL
+===================================================== -->
+
+<div class="feedback-modal" id="feedbackModal">
+
+    <div class="feedback-box">
+
+        <button
+            class="close-modal"
+            onclick="closeFeedback()">
+            ×
+        </button>
+
+        <h2>
+            Send Your Suggestion
+        </h2>
+
+        <form
+            action="https://formsubmit.co/mohamedrish18@icloud.com"
+            method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea
+                name="message"
+                placeholder="Your suggestion..."
+                required></textarea>
+
+            <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Website Suggestion">
+
+            <input
+                type="hidden"
+                name="_captcha"
+                value="false">
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+                Send Suggestion
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 Mohamed Rishadh. All Rights Reserved.
+        </p>
+
+        <div class="footer-social">
+
+            <a href="https://wa.me/94704838532"
+               target="_blank">
+                WhatsApp
+            </a>
+
+            <a href="https://www.instagram.com/m_rish_4you"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+               target="_blank">
+                Facebook
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     WHATSAPP BUTTON
+===================================================== -->
+
+<a
+    href="https://wa.me/94704838532"
+    target="_blank"
+    class="whatsapp-btn"
+    aria-label="Chat on WhatsApp">
+
+    ☎
+
+</a>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function toggleMenu() {
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+    navLinks.classList.toggle("show");
+
+}
+
+
+function openFeedback() {
+
+    document
+        .getElementById("feedbackModal")
+        .classList.add("active");
+
+}
+
+
+function closeFeedback() {
+
+    document
+        .getElementById("feedbackModal")
+        .classList.remove("active");
+
+}
+
+
+window.addEventListener("click", function(event) {
+
+    const modal =
+        document.getElementById("feedbackModal");
+
+    if (event.target === modal) {
+        closeFeedback();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
