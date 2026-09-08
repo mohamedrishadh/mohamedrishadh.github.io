@@ -1136,3 +1136,278 @@ footer p {
         scroll-behavior: auto !important;
     }
 }
+/* =========================================================
+   STEP 10 — PREMIUM HOME HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(212,175,55,0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 20% 70%,
+            rgba(212,175,55,0.08),
+            transparent 30%
+        ),
+        #080807;
+}
+
+
+/* GOLD LIGHT */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 50%;
+    right: 5%;
+
+    transform: translateY(-50%);
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,175,55,0.12),
+            transparent 65%
+        );
+
+    filter: blur(20px);
+
+    pointer-events: none;
+}
+
+
+/* HERO CONTENT */
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* TEXT ANIMATION */
+
+.hero-text-content {
+    animation:
+        heroTextIn 1s ease both;
+}
+
+@keyframes heroTextIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0);
+    }
+}
+
+
+/* SUBTITLE */
+
+.hero-subtitle {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 15px;
+
+    border: 1px solid rgba(212,175,55,0.25);
+
+    border-radius: 30px;
+
+    background: rgba(212,175,55,0.05);
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,0.06);
+}
+
+
+/* NAME */
+
+.hero h1 {
+    text-shadow:
+        0 5px 0 rgba(255,255,255,0.03),
+        0 15px 35px rgba(0,0,0,0.7);
+}
+
+.hero h1 span {
+    position: relative;
+
+    display: inline-block;
+}
+
+.hero h1 span::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -8px;
+
+    width: 65%;
+    height: 3px;
+
+    background: #d4af37;
+
+    box-shadow:
+        0 0 12px rgba(212,175,55,0.7);
+}
+
+
+/* ROLE */
+
+.hero-role {
+    color: #f1f1f1;
+
+    text-shadow:
+        0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+/* DESCRIPTION */
+
+.hero-description {
+    padding-left: 18px;
+
+    border-left: 2px solid #d4af37;
+}
+
+
+/* PREMIUM PROFILE */
+
+.hero-image {
+    position: relative;
+
+    animation:
+        heroImageIn 1.2s ease 0.2s both;
+}
+
+@keyframes heroImageIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(50px)
+            scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(0)
+            scale(1);
+    }
+}
+
+
+.profile-ring {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(212,175,55,0.12),
+            rgba(0,0,0,0.4)
+        );
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:
+        0 0 0 8px rgba(212,175,55,0.04),
+        0 0 40px rgba(212,175,55,0.25),
+        inset 0 0 30px rgba(212,175,55,0.08);
+}
+
+
+/* ROTATING OUTER RING */
+
+.profile-ring::after {
+    content: "";
+
+    position: absolute;
+
+    inset: -25px;
+
+    border-radius: 50%;
+
+    border:
+        1px dashed rgba(212,175,55,0.35);
+
+    animation:
+        ringRotate 18s linear infinite;
+}
+
+@keyframes ringRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* BUTTON PREMIUM EFFECT */
+
+.btn {
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.25);
+}
+
+.btn:hover {
+    box-shadow:
+        0 12px 30px rgba(212,175,55,0.25);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero::before {
+        width: 350px;
+        height: 350px;
+
+        right: 50%;
+
+        transform:
+            translate(50%, -50%);
+    }
+
+    .hero h1 span::after {
+        width: 55%;
+    }
+
+    .hero-description {
+        border-left: none;
+
+        border-top: 2px solid #d4af37;
+
+        padding-left: 0;
+
+        padding-top: 15px;
+    }
+
+}
