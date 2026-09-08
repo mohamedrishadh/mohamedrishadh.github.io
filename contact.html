@@ -5,422 +5,596 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Contact Mohamed Rishadh">
-
-    <title>Contact | Mohamed Rishadh</title>
+    <title>Contact | Rishadh</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
 
-<header class="navbar">
+        <div class="nav-container">
 
-    <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <span>R</span> RISHADH
+            </a>
 
-        <div class="logo">
-            MR.
-        </div>
-
-        <nav>
-
-            <button class="menu-btn" onclick="toggleMenu()">
-                ☰
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
             </button>
 
-            <ul class="nav-links" id="navLinks">
+            <nav>
+                <ul id="navMenu">
 
-                <li>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </li>
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
+                    <li>
+                        <a href="about.html">
+                            <i class="fa-solid fa-user"></i>
+                            About
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="skills.html">
-                        Skills
-                    </a>
-                </li>
+                    <li>
+                        <a href="skills.html">
+                            <i class="fa-solid fa-code"></i>
+                            Skills
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="experience.html">
-                        Experience
-                    </a>
-                </li>
+                    <li>
+                        <a href="experience.html">
+                            <i class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="education.html">
-                        Education
-                    </a>
-                </li>
+                    <li>
+                        <a href="education.html">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Education
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="contact.html" class="active">
-                        Contact
-                    </a>
-                </li>
+                    <li>
+                        <a href="contact.html" class="active">
+                            <i class="fa-solid fa-envelope"></i>
+                            Contact
+                        </a>
+                    </li>
 
-            </ul>
+                </ul>
+            </nav>
 
-        </nav>
+        </div>
 
-    </div>
-
-</header>
+    </header>
 
 
-<!-- =====================================================
-     CONTACT PAGE
-===================================================== -->
-
-<main class="inner-page">
-
-    <div class="container">
+    <!-- ================= CONTACT PAGE ================= -->
+    <main class="inner-page">
 
         <!-- PAGE HEADING -->
+        <section class="page-heading">
 
-        <div class="page-heading">
+            <div class="section-title">
 
-            <span>
-                LET'S CONNECT
-            </span>
+                <span>05</span>
 
-            <h1>
-                CONTACT <strong>ME</strong>
-            </h1>
+                <h1>Contact Me</h1>
+
+            </div>
 
             <p>
-                Feel free to get in touch with me.
+                Feel free to contact me for professional
+                opportunities, questions or collaboration.
             </p>
 
-        </div>
+        </section>
 
 
-        <!-- CONTACT DETAILS -->
+        <!-- ================= CONTACT CARDS ================= -->
+        <section class="section contact-section">
 
-        <div class="contact-grid">
+            <div class="contact-grid">
 
-            <!-- Phone -->
 
-            <div class="contact-card">
+                <!-- PHONE -->
+                <a href="tel:+94704838532"
+                   class="contact-card">
 
-                <h3>
-                    Phone
-                </h3>
+                    <div class="contact-icon">
 
-                <p>
-                    <a href="tel:+94704838532">
-                        070 483 8532
-                    </a>
-                </p>
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Phone
+                        </span>
+
+                        <h3>
+                            070 483 8532
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <!-- EMAIL -->
+                <a href="mailto:mohamedrish18@icloud.com"
+                   class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Email
+                        </span>
+
+                        <h3>
+                            mohamedrish18@icloud.com
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <!-- WHATSAPP -->
+                <a href="https://wa.me/94704838532"
+                   target="_blank"
+                   class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            WhatsApp
+                        </span>
+
+                        <h3>
+                            Chat with Me
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <!-- LOCATION -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Location
+                        </span>
+
+                        <h3>
+                            Biyagama, Malwana
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INSTAGRAM -->
+                <a href="https://www.instagram.com/m_rish_4you"
+                   target="_blank"
+                   class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Instagram
+                        </span>
+
+                        <h3>
+                            @m_rish_4you
+                        </h3>
+
+                    </div>
+
+                </a>
+
+
+                <!-- FACEBOOK -->
+                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+                   target="_blank"
+                   class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Facebook
+                        </span>
+
+                        <h3>
+                            Connect on Facebook
+                        </h3>
+
+                    </div>
+
+                </a>
 
             </div>
 
+        </section>
 
-            <!-- Email -->
 
-            <div class="contact-card">
+        <!-- ================= CONTACT MESSAGE ================= -->
+        <section class="section">
 
-                <h3>
-                    Email
-                </h3>
+            <div class="contact-message">
+
+                <div class="message-icon">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </div>
+
+                <h2>
+                    Let's Talk
+                </h2>
 
                 <p>
-                    <a href="mailto:mohamedrish18@icloud.com">
-                        mohamedrish18@icloud.com
-                    </a>
+                    Whether you have a professional opportunity,
+                    a question or simply want to connect,
+                    I would be happy to hear from you.
                 </p>
 
-            </div>
+                <div class="hero-buttons">
 
+                    <a href="mailto:mohamedrish18@icloud.com"
+                       class="btn primary-btn">
 
-            <!-- WhatsApp -->
+                        <i class="fa-solid fa-envelope"></i>
 
-            <div class="contact-card">
+                        Send Email
 
-                <h3>
-                    WhatsApp
-                </h3>
+                    </a>
 
-                <p>
                     <a href="https://wa.me/94704838532"
-                       target="_blank">
-                        Chat on WhatsApp
+                       target="_blank"
+                       class="btn whatsapp-btn">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        WhatsApp Me
+
                     </a>
-                </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEEDBACK ================= -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>06</span>
+
+                <h2>Send a Suggestion</h2>
 
             </div>
 
 
-            <!-- Location -->
-
-            <div class="contact-card">
-
-                <h3>
-                    Location
-                </h3>
+            <div class="feedback-box">
 
                 <p>
-                    Biyagama, Malwana
+                    Have a suggestion about my portfolio?
+                    You can send me your feedback.
                 </p>
 
-            </div>
+                <button class="btn primary-btn"
+                        id="openFeedback">
 
+                    <i class="fa-solid fa-comment-dots"></i>
 
-            <!-- Instagram -->
+                    Send Feedback
 
-            <div class="contact-card">
-
-                <h3>
-                    Instagram
-                </h3>
-
-                <p>
-                    <a href="https://www.instagram.com/m_rish_4you"
-                       target="_blank">
-                        @m_rish_4you
-                    </a>
-                </p>
-
-            </div>
-
-
-            <!-- Facebook -->
-
-            <div class="contact-card">
-
-                <h3>
-                    Facebook
-                </h3>
-
-                <p>
-                    <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
-                       target="_blank">
-                        Visit My Facebook
-                    </a>
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- FEEDBACK -->
-
-        <div class="about-text" style="margin-top: 45px;">
-
-            <h3 style="color:#d4af37; margin-bottom:15px;">
-                Have a Suggestion?
-            </h3>
-
-            <p>
-                I am always looking to improve my portfolio,
-                professional skills and personal brand.
-                Your feedback and suggestions are welcome.
-            </p>
-
-            <div class="hero-buttons">
-
-                <button
-                    class="btn btn-primary"
-                    onclick="openFeedback()">
-                    Send a Suggestion
                 </button>
 
             </div>
 
-        </div>
+        </section>
+
+    </main>
 
 
-        <!-- BACK BUTTON -->
+    <!-- ================= FEEDBACK MODAL ================= -->
+    <div class="feedback-modal"
+         id="feedbackModal">
 
-        <div class="hero-buttons">
+        <div class="feedback-modal-content">
 
-            <a href="education.html" class="btn">
-                ← My Education
-            </a>
+            <button class="close-modal"
+                    id="closeFeedback">
 
-            <a href="index.html" class="btn btn-primary">
-                Back to Home
-            </a>
+                <i class="fa-solid fa-xmark"></i>
 
-        </div>
-
-    </div>
-
-</main>
-
-
-<!-- =====================================================
-     FEEDBACK MODAL
-===================================================== -->
-
-<div class="feedback-modal" id="feedbackModal">
-
-    <div class="feedback-box">
-
-        <button
-            class="close-modal"
-            onclick="closeFeedback()">
-            ×
-        </button>
-
-        <h2>
-            Send Your Suggestion
-        </h2>
-
-        <form
-            action="https://formsubmit.co/mohamedrish18@icloud.com"
-            method="POST">
-
-            <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                required>
-
-            <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required>
-
-            <textarea
-                name="message"
-                placeholder="Your suggestion..."
-                required></textarea>
-
-            <input
-                type="hidden"
-                name="_subject"
-                value="New Portfolio Website Suggestion">
-
-            <input
-                type="hidden"
-                name="_captcha"
-                value="false">
-
-            <button
-                type="submit"
-                class="btn btn-primary">
-                Send Suggestion
             </button>
 
-        </form>
+            <div class="message-icon">
 
-    </div>
+                <i class="fa-solid fa-comment-dots"></i>
 
-</div>
+            </div>
+
+            <h2>
+                Your Feedback
+            </h2>
+
+            <p>
+                I would love to hear your suggestions.
+            </p>
 
 
-<!-- =====================================================
-     FOOTER
-===================================================== -->
+            <form action="https://formsubmit.co/mohamedrish18@icloud.com"
+                  method="POST">
 
-<footer>
+                <input type="hidden"
+                       name="_subject"
+                       value="New Portfolio Website Suggestion">
 
-    <div class="container">
+                <input type="hidden"
+                       name="_captcha"
+                       value="false">
 
-        <p>
-            © 2026 Mohamed Rishadh. All Rights Reserved.
-        </p>
 
-        <div class="footer-social">
+                <input type="text"
+                       name="name"
+                       placeholder="Your Name"
+                       required>
 
-            <a href="https://wa.me/94704838532"
-               target="_blank">
-                WhatsApp
-            </a>
 
-            <a href="https://www.instagram.com/m_rish_4you"
-               target="_blank">
-                Instagram
-            </a>
+                <input type="email"
+                       name="email"
+                       placeholder="Your Email"
+                       required>
 
-            <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
-               target="_blank">
-                Facebook
-            </a>
+
+                <textarea name="message"
+                          placeholder="Your suggestion..."
+                          rows="5"
+                          required></textarea>
+
+
+                <button type="submit"
+                        class="btn primary-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Send Suggestion
+
+                </button>
+
+            </form>
 
         </div>
 
     </div>
 
-</footer>
+
+    <!-- ================= WHATSAPP FLOAT BUTTON ================= -->
+    <a href="https://wa.me/94704838532"
+       target="_blank"
+       class="whatsapp-float"
+       aria-label="WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
 
 
-<!-- =====================================================
-     WHATSAPP BUTTON
-===================================================== -->
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
 
-<a
-    href="https://wa.me/94704838532"
-    target="_blank"
-    class="whatsapp-btn"
-    aria-label="Chat on WhatsApp">
+        <div class="footer-content">
 
-    ☎
+            <h3>
+                <span>R</span> RISHADH
+            </h3>
 
-</a>
-
-
-<!-- =====================================================
-     JAVASCRIPT
-===================================================== -->
-
-<script>
-
-function toggleMenu() {
-
-    const navLinks =
-        document.getElementById("navLinks");
-
-    navLinks.classList.toggle("show");
-
-}
+            <p>
+                Junior Executive | Panda Group of Companies
+            </p>
 
 
-function openFeedback() {
+            <div class="social-links">
 
-    document
-        .getElementById("feedbackModal")
-        .classList.add("active");
+                <a href="https://www.instagram.com/m_rish_4you"
+                   target="_blank"
+                   aria-label="Instagram">
 
-}
+                    <i class="fa-brands fa-instagram"></i>
 
-
-function closeFeedback() {
-
-    document
-        .getElementById("feedbackModal")
-        .classList.remove("active");
-
-}
+                </a>
 
 
-window.addEventListener("click", function(event) {
+                <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
+                   target="_blank"
+                   aria-label="Facebook">
 
-    const modal =
-        document.getElementById("feedbackModal");
+                    <i class="fa-brands fa-facebook-f"></i>
 
-    if (event.target === modal) {
-        closeFeedback();
-    }
+                </a>
 
-});
 
-</script>
+                <a href="https://wa.me/94704838532"
+                   target="_blank"
+                   aria-label="WhatsApp">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                </a>
+
+
+                <a href="mailto:mohamedrish18@icloud.com"
+                   aria-label="Email">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 Rishadh. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= MOBILE MENU + MODAL ================= -->
+    <script>
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navMenu = document.getElementById("navMenu");
+
+        menuToggle.addEventListener("click", function () {
+
+            navMenu.classList.toggle("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            if (navMenu.classList.contains("active")) {
+
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+
+            } else {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        });
+
+
+        // Close mobile menu
+
+        document.querySelectorAll("#navMenu a").forEach(function(link) {
+
+            link.addEventListener("click", function() {
+
+                navMenu.classList.remove("active");
+
+                const icon = menuToggle.querySelector("i");
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            });
+
+        });
+
+
+        // Feedback Modal
+
+        const feedbackModal =
+            document.getElementById("feedbackModal");
+
+        const openFeedback =
+            document.getElementById("openFeedback");
+
+        const closeFeedback =
+            document.getElementById("closeFeedback");
+
+
+        openFeedback.addEventListener("click", function() {
+
+            feedbackModal.classList.add("active");
+
+        });
+
+
+        closeFeedback.addEventListener("click", function() {
+
+            feedbackModal.classList.remove("active");
+
+        });
+
+
+        // Close modal by clicking outside
+
+        feedbackModal.addEventListener("click", function(event) {
+
+            if (event.target === feedbackModal) {
+
+                feedbackModal.classList.remove("active");
+
+            }
+
+        });
+
+
+        // ESC key closes modal
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                feedbackModal.classList.remove("active");
+
+            }
+
+        });
+
+    </script>
 
 </body>
+
 </html>
