@@ -920,3 +920,355 @@ footer p {
     }
 }
 ```
+/* =========================================================
+   PREMIUM ANIMATIONS & 3D EFFECTS
+========================================================= */
+
+/* Page fade-in */
+
+body {
+    animation: pageFade 0.8s ease both;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Navbar premium effect */
+
+.navbar {
+    box-shadow:
+        0 5px 30px rgba(0,0,0,0.35);
+}
+
+
+/* Logo 3D hover */
+
+.logo {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.logo:hover {
+    transform:
+        perspective(500px)
+        rotateY(15deg)
+        rotateX(8deg)
+        scale(1.08);
+
+    box-shadow:
+        0 0 25px rgba(212,175,55,0.4),
+        inset 0 0 20px rgba(212,175,55,0.12);
+}
+
+
+/* Hero 3D title */
+
+.hero h1 {
+    animation: titleReveal 1s ease 0.2s both;
+}
+
+@keyframes titleReveal {
+
+    from {
+        opacity: 0;
+        transform:
+            perspective(700px)
+            rotateX(35deg)
+            translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            perspective(700px)
+            rotateX(0)
+            translateY(0);
+    }
+
+}
+
+
+/* Gold glow */
+
+.hero h1 span,
+.page-heading h1 strong {
+    text-shadow:
+        0 0 10px rgba(212,175,55,0.35),
+        0 0 30px rgba(212,175,55,0.12);
+}
+
+
+/* Profile image floating animation */
+
+.profile-ring {
+    animation: floatingProfile 5s ease-in-out infinite;
+}
+
+@keyframes floatingProfile {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-12px) rotate(1deg);
+    }
+
+}
+
+
+/* Profile glow */
+
+.profile-ring::after {
+    content: "";
+    position: absolute;
+    inset: -25px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(212,175,55,0.08);
+
+    animation: profileGlow 3s ease-in-out infinite;
+}
+
+@keyframes profileGlow {
+
+    0%,
+    100% {
+        transform: scale(0.95);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+
+}
+
+
+/* Button 3D */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.btn::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 70%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,0.25),
+            transparent
+        );
+
+    transform: skewX(-20deg);
+
+    transition: left 0.6s ease;
+}
+
+.btn:hover::before {
+    left: 130%;
+}
+
+.btn:hover {
+    transform:
+        translateY(-4px)
+        perspective(500px)
+        rotateX(4deg);
+}
+
+
+/* Cards 3D */
+
+.skill-card,
+.highlight-card,
+.contact-card,
+.education-card,
+.experience-card {
+    transform-style: preserve-3d;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.skill-card:hover,
+.highlight-card:hover,
+.contact-card:hover {
+    transform:
+        perspective(700px)
+        rotateX(3deg)
+        rotateY(-3deg)
+        translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,0.45),
+        0 0 20px rgba(212,175,55,0.08);
+}
+
+
+/* Experience card */
+
+.experience-card:hover {
+    transform:
+        translateX(6px)
+        perspective(700px)
+        rotateY(-1deg);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35);
+}
+
+
+/* Education card */
+
+.education-card:hover {
+    transform:
+        perspective(700px)
+        rotateX(2deg)
+        translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.35);
+}
+
+
+/* Section headings */
+
+.section-title,
+.page-heading {
+    animation:
+        headingReveal 0.9s ease both;
+}
+
+@keyframes headingReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Inner page heading */
+
+.page-heading h1 {
+    text-shadow:
+        0 3px 0 #333333,
+        0 8px 20px rgba(0,0,0,0.8),
+        0 0 30px rgba(212,175,55,0.08);
+}
+
+
+/* WhatsApp pulse */
+
+.whatsapp-btn {
+    animation:
+        whatsappPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0.35);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 14px rgba(37,211,102,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0);
+    }
+
+}
+
+
+/* Footer links */
+
+.footer-social a {
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Mobile animation adjustment */
+
+@media (max-width: 768px) {
+
+    .profile-ring {
+        animation-duration: 6s;
+    }
+
+    .skill-card:hover,
+    .highlight-card:hover,
+    .contact-card:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body,
+    .hero h1,
+    .profile-ring,
+    .profile-ring::after,
+    .whatsapp-btn,
+    .section-title,
+    .page-heading {
+        animation: none !important;
+    }
+
+    .btn,
+    .skill-card,
+    .highlight-card,
+    .contact-card,
+    .education-card,
+    .experience-card {
+        transition: none !important;
+    }
+
+}
