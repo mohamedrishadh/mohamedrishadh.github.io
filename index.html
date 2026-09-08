@@ -7,30 +7,32 @@
 
     <title>Rishadh | Junior Executive</title>
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Font Awesome Icons -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="navbar">
-        <div class="nav-container">
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
+    <header class="navbar">
+
+        <div class="nav-content">
+
+            <!-- LOGO -->
             <a href="index.html" class="logo">
-                <span>R</span> RISHADH
+                R
             </a>
 
-            <button class="menu-toggle" id="menuToggle">
-                <i class="fa-solid fa-bars"></i>
-            </button>
 
+            <!-- DESKTOP / MOBILE MENU -->
             <nav>
-                <ul id="navMenu">
+
+                <ul class="nav-links" id="navMenu">
 
                     <li>
                         <a href="index.html" class="active">
@@ -75,66 +77,110 @@
                     </li>
 
                 </ul>
+
             </nav>
 
+
+            <!-- MOBILE BUTTON -->
+            <button class="menu-btn" id="menuToggle" aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
         </div>
+
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
     <main>
 
         <section class="hero">
 
-            <div class="hero-content">
+            <div class="container">
 
-                <p class="hero-small">
-                    <i class="fa-solid fa-circle"></i>
-                    Welcome to my portfolio
-                </p>
-
-                <h1>
-                    Hi, I'm <span>Rishadh</span>
-                </h1>
-
-                <h2>
-                    Junior Executive
-                </h2>
-
-                <p class="hero-description">
-                    Panda Group of Companies
-                </p>
-
-                <p class="hero-text">
-                    A passionate and responsible professional with experience
-                    in transport coordination, customer handling, Excel data
-                    management and daily operational support.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="experience.html" class="btn primary-btn">
-                        <i class="fa-solid fa-briefcase"></i>
-                        View My Experience
-                    </a>
-
-                    <a href="contact.html" class="btn secondary-btn">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Contact Me
-                    </a>
-
-                </div>
-
-            </div>
+                <div class="hero-content">
 
 
-            <!-- ================= PROFILE ================= -->
-            <div class="hero-profile">
+                    <!-- HERO TEXT -->
 
-                <div class="profile-ring">
+                    <div class="hero-text-content">
 
-                    <img src="profile.jpg.png"
-                         alt="Rishadh Profile Photo">
+                        <p class="hero-subtitle">
+                            WELCOME TO MY PORTFOLIO
+                        </p>
+
+
+                        <h1>
+                            HI, I'M
+                            <span>RISHADH</span>
+                        </h1>
+
+
+                        <h2 class="hero-role">
+                            Junior Executive
+                        </h2>
+
+
+                        <p class="hero-tagline">
+                            Panda Group of Companies
+                        </p>
+
+
+                        <p class="hero-description">
+
+                            A passionate and responsible professional with
+                            experience in transport coordination, customer
+                            handling, Excel data management and daily
+                            operational support.
+
+                        </p>
+
+
+                        <!-- BUTTONS -->
+
+                        <div class="hero-buttons">
+
+                            <a href="experience.html"
+                               class="btn btn-primary">
+
+                                <i class="fa-solid fa-briefcase"></i>
+
+                                View My Experience
+
+                            </a>
+
+
+                            <a href="contact.html"
+                               class="btn">
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                                Contact Me
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PROFILE IMAGE -->
+
+                    <div class="hero-image">
+
+                        <div class="profile-ring">
+
+                            <img src="profile.jpg.png"
+                                 alt="Rishadh Profile Photo">
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -143,37 +189,66 @@
         </section>
 
 
-        <!-- ================= ABOUT PREVIEW ================= -->
-        <section class="section about-section">
+        <!-- =================================================
+             ABOUT PREVIEW
+        ================================================== -->
 
-            <div class="section-title">
-                <span>01</span>
-                <h2>About Me</h2>
-            </div>
+        <section>
 
-            <div class="about-content">
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>01</span>
+
+                    <h2>
+                        ABOUT <strong>ME</strong>
+                    </h2>
+
+                </div>
+
 
                 <div class="about-text">
 
                     <p>
-                        I am Rishadh, currently working as a Junior Executive
-                        at Panda Group of Companies.
+
+                        I am Rishadh, currently working as a
+                        Junior Executive at Panda Group of Companies.
+
                     </p>
 
-                    <p>
-                        I have practical experience in transport and logistics
-                        operations, vehicle coordination, driver communication,
-                        customer handling and Excel-based data management.
-                    </p>
+                    <br>
 
                     <p>
+
+                        I have practical experience in transport and
+                        logistics operations, vehicle coordination,
+                        driver communication, customer handling and
+                        Excel-based data management.
+
+                    </p>
+
+                    <br>
+
+                    <p>
+
                         I always focus on responsibility, communication,
                         teamwork and completing tasks efficiently.
+
                     </p>
 
-                    <a href="about.html" class="text-link">
+                </div>
+
+
+                <div class="hero-buttons"
+                     style="justify-content:center;">
+
+                    <a href="about.html" class="btn">
+
+                        <i class="fa-solid fa-user"></i>
+
                         Read More About Me
-                        <i class="fa-solid fa-arrow-right"></i>
+
                     </a>
 
                 </div>
@@ -183,202 +258,343 @@
         </section>
 
 
-        <!-- ================= SKILLS PREVIEW ================= -->
-        <section class="section skills-section">
+        <!-- =================================================
+             SKILLS PREVIEW
+        ================================================== -->
 
-            <div class="section-title">
-                <span>02</span>
-                <h2>My Skills</h2>
-            </div>
+        <section>
 
-            <div class="skills-grid">
+            <div class="container">
 
-                <div class="skill-card">
-                    <i class="fa-solid fa-file-excel"></i>
-                    <h3>Microsoft Excel</h3>
-                    <p>
-                        Data entry, updating and professional data management.
-                    </p>
+                <div class="section-title">
+
+                    <span>02</span>
+
+                    <h2>
+                        MY <strong>SKILLS</strong>
+                    </h2>
+
                 </div>
 
-                <div class="skill-card">
-                    <i class="fa-solid fa-users"></i>
-                    <h3>Teamwork</h3>
-                    <p>
-                        Working effectively with teams and colleagues.
-                    </p>
+
+                <div class="skills-grid">
+
+
+                    <!-- SKILL 1 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-file-excel"></i>
+
+                        </div>
+
+                        <h3>
+                            Microsoft Excel
+                        </h3>
+
+                    </div>
+
+
+                    <!-- SKILL 2 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <h3>
+                            Teamwork
+                        </h3>
+
+                    </div>
+
+
+                    <!-- SKILL 3 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-clock"></i>
+
+                        </div>
+
+                        <h3>
+                            Time Management
+                        </h3>
+
+                    </div>
+
+
+                    <!-- SKILL 4 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-truck"></i>
+
+                        </div>
+
+                        <h3>
+                            Transport Coordination
+                        </h3>
+
+                    </div>
+
+
+                    <!-- SKILL 5 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                        </div>
+
+                        <h3>
+                            Customer Handling
+                        </h3>
+
+                    </div>
+
+
+                    <!-- SKILL 6 -->
+
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                        </div>
+
+                        <h3>
+                            Leadership
+                        </h3>
+
+                    </div>
+
                 </div>
 
-                <div class="skill-card">
-                    <i class="fa-solid fa-clock"></i>
-                    <h3>Time Management</h3>
-                    <p>
-                        Managing daily responsibilities and schedules.
-                    </p>
+
+                <div class="hero-buttons"
+                     style="justify-content:center;">
+
+                    <a href="skills.html"
+                       class="btn btn-primary">
+
+                        <i class="fa-solid fa-list"></i>
+
+                        View All Skills
+
+                    </a>
+
                 </div>
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>Transport Coordination</h3>
-                    <p>
-                        Vehicle arrangements and transport operations.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-headset"></i>
-                    <h3>Customer Handling</h3>
-                    <p>
-                        Professional communication and customer support.
-                    </p>
-                </div>
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-user-tie"></i>
-                    <h3>Leadership</h3>
-                    <p>
-                        Taking responsibility and supporting team operations.
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="center-button">
-
-                <a href="skills.html" class="btn primary-btn">
-                    <i class="fa-solid fa-list"></i>
-                    View All Skills
-                </a>
 
             </div>
 
         </section>
 
 
-        <!-- ================= EXPERIENCE PREVIEW ================= -->
-        <section class="section experience-section">
+        <!-- =================================================
+             EXPERIENCE PREVIEW
+        ================================================== -->
 
-            <div class="section-title">
-                <span>03</span>
-                <h2>Experience</h2>
-            </div>
+        <section>
 
-            <div class="experience-card">
+            <div class="container">
 
-                <div class="experience-icon">
-                    <i class="fa-solid fa-briefcase"></i>
+                <div class="section-title">
+
+                    <span>03</span>
+
+                    <h2>
+                        MY <strong>EXPERIENCE</strong>
+                    </h2>
+
                 </div>
 
-                <div class="experience-content">
+
+                <div class="experience-card">
 
                     <h3>
-                        Junior Executive
+                        Panda Group of Companies
                     </h3>
 
                     <h4>
-                        Panda Group of Companies
+                        Junior Executive
                     </h4>
 
-                    <span class="experience-date">
-                        <i class="fa-regular fa-calendar"></i>
-                        2025 – Present
-                    </span>
-
                     <p>
-                        Handling transport coordination, vehicle arrangements,
-                        driver communication, customer details, Excel data,
-                        transport schedules and daily operational reports.
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        2025 – Present
+
+                    </p>
+
+
+                    <p style="margin-top:20px;">
+
+                        Handling transport coordination, vehicle
+                        arrangements, driver communication, customer
+                        details, Excel data, transport schedules and
+                        daily operational reports.
+
                     </p>
 
                 </div>
 
-            </div>
 
-            <div class="center-button">
+                <div class="hero-buttons"
+                     style="justify-content:center;">
 
-                <a href="experience.html" class="btn secondary-btn">
-                    <i class="fa-solid fa-arrow-right"></i>
-                    View Full Experience
-                </a>
+                    <a href="experience.html"
+                       class="btn">
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                        View Full Experience
+
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= EDUCATION PREVIEW ================= -->
-        <section class="section education-section">
+        <!-- =================================================
+             EDUCATION PREVIEW
+        ================================================== -->
 
-            <div class="section-title">
-                <span>04</span>
-                <h2>Education</h2>
-            </div>
+        <section>
 
-            <div class="education-card">
+            <div class="container">
 
-                <div class="education-icon">
-                    <i class="fa-solid fa-graduation-cap"></i>
+                <div class="section-title">
+
+                    <span>04</span>
+
+                    <h2>
+                        MY <strong>EDUCATION</strong>
+                    </h2>
+
                 </div>
 
-                <div class="education-content">
+
+                <div class="education-card">
+
+                    <div class="education-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
 
                     <h3>
                         G.C.E. Ordinary Level (O/L)
                     </h3>
 
-                    <h4>
-                        Al Mahmood Maha Vidyalaya
-                    </h4>
 
-                    <span>
+                    <p>
+                        Al Mahmood Maha Vidyalaya
+                    </p>
+
+
+                    <p>
                         <i class="fa-regular fa-calendar"></i>
                         Completed 2021
-                    </span>
+                    </p>
 
                 </div>
 
-            </div>
 
-            <div class="center-button">
+                <div class="hero-buttons"
+                     style="justify-content:center;">
 
-                <a href="education.html" class="btn primary-btn">
-                    <i class="fa-solid fa-book-open"></i>
-                    View Education
-                </a>
+                    <a href="education.html"
+                       class="btn btn-primary">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        View Education
+
+                    </a>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- ================= CONTACT PREVIEW ================= -->
-        <section class="section contact-section">
+        <!-- =================================================
+             CONTACT PREVIEW
+        ================================================== -->
 
-            <div class="section-title">
-                <span>05</span>
-                <h2>Let's Connect</h2>
-            </div>
+        <section>
 
-            <div class="contact-preview">
+            <div class="container">
 
-                <p>
-                    Interested in working together or want to get in touch?
-                    Feel free to contact me.
-                </p>
+                <div class="section-title">
 
-                <div class="contact-buttons">
+                    <span>05</span>
 
-                    <a href="contact.html" class="btn primary-btn">
-                        <i class="fa-solid fa-envelope"></i>
-                        Open Contact Page
-                    </a>
+                    <h2>
+                        LET'S <strong>CONNECT</strong>
+                    </h2>
 
-                    <a href="https://wa.me/94704838532"
-                       target="_blank"
-                       class="btn whatsapp-btn">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        WhatsApp Me
-                    </a>
+                </div>
+
+
+                <div class="contact-message">
+
+                    <h3>
+                        Get In Touch
+                    </h3>
+
+
+                    <p>
+
+                        Interested in working together or want to
+                        get in touch? Feel free to contact me.
+
+                    </p>
+
+
+                    <div class="hero-buttons"
+                         style="justify-content:center;">
+
+                        <a href="contact.html"
+                           class="btn btn-primary">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            Open Contact Page
+
+                        </a>
+
+
+                        <a href="https://wa.me/94704838532"
+                           target="_blank"
+                           class="btn">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                            WhatsApp Me
+
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -389,75 +605,107 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
 
-        <div class="footer-content">
+    <footer>
 
-            <h3>
-                <span>R</span> RISHADH
-            </h3>
+        <div class="container">
 
             <p>
-                Junior Executive | Panda Group of Companies
+                © 2026 Rishadh. All Rights Reserved.
             </p>
 
-            <div class="social-links">
+
+            <div class="footer-social">
 
                 <a href="https://www.instagram.com/m_rish_4you"
                    target="_blank"
                    aria-label="Instagram">
+
                     <i class="fa-brands fa-instagram"></i>
+
                 </a>
+
 
                 <a href="https://www.facebook.com/share/1R2MmjTB9F/?mibextid=wwXIfr"
                    target="_blank"
                    aria-label="Facebook">
+
                     <i class="fa-brands fa-facebook-f"></i>
+
                 </a>
+
 
                 <a href="https://wa.me/94704838532"
                    target="_blank"
                    aria-label="WhatsApp">
+
                     <i class="fa-brands fa-whatsapp"></i>
+
                 </a>
+
 
                 <a href="mailto:mohamedrish18@icloud.com"
                    aria-label="Email">
+
                     <i class="fa-solid fa-envelope"></i>
+
                 </a>
 
             </div>
-
-            <p class="copyright">
-                © 2026 Rishadh. All Rights Reserved.
-            </p>
 
         </div>
 
     </footer>
 
 
-    <!-- ================= MOBILE MENU ================= -->
+    <!-- =====================================================
+         WHATSAPP FLOATING BUTTON
+    ====================================================== -->
+
+    <a href="https://wa.me/94704838532"
+       target="_blank"
+       class="whatsapp-btn"
+       aria-label="WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =====================================================
+         MOBILE MENU JAVASCRIPT
+    ====================================================== -->
+
     <script>
 
-        const menuToggle = document.getElementById("menuToggle");
-        const navMenu = document.getElementById("navMenu");
+        const menuToggle =
+            document.getElementById("menuToggle");
+
+        const navMenu =
+            document.getElementById("navMenu");
+
 
         menuToggle.addEventListener("click", function () {
 
-            navMenu.classList.toggle("active");
+            navMenu.classList.toggle("show");
 
-            const icon = menuToggle.querySelector("i");
+            const icon =
+                menuToggle.querySelector("i");
 
-            if (navMenu.classList.contains("active")) {
+
+            if (navMenu.classList.contains("show")) {
 
                 icon.classList.remove("fa-bars");
+
                 icon.classList.add("fa-xmark");
 
             } else {
 
                 icon.classList.remove("fa-xmark");
+
                 icon.classList.add("fa-bars");
 
             }
@@ -465,21 +713,25 @@
         });
 
 
-        // Close mobile menu after clicking a link
-        document.querySelectorAll("#navMenu a").forEach(function(link) {
+        /* Close menu after clicking */
 
-            link.addEventListener("click", function() {
+        document.querySelectorAll(".nav-links a")
+            .forEach(function(link) {
 
-                navMenu.classList.remove("active");
+                link.addEventListener("click", function() {
 
-                const icon = menuToggle.querySelector("i");
+                    navMenu.classList.remove("show");
 
-                icon.classList.remove("fa-xmark");
-                icon.classList.add("fa-bars");
+                    const icon =
+                        menuToggle.querySelector("i");
+
+                    icon.classList.remove("fa-xmark");
+
+                    icon.classList.add("fa-bars");
+
+                });
 
             });
-
-        });
 
     </script>
 
